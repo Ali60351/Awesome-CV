@@ -29,9 +29,9 @@
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
+% \colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
+\definecolor{awesome}{HTML}{000000}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -47,23 +47,25 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+\usepackage{graphicx}
+
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
-\name{Byungjin}{Park}
-\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
-\address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+\photo[circle,noedge,right]{profile}
+\name{Ali}{Nauman}
+\position{Senior Software Engineer{\enskip\cdotp\enskip}Full Stack Developer}
+\address{House No. 200, Block B, Iqbal Avenue Phase III, Lahore, Pakistan}
 
-\mobile{(+82) 10-9030-1843}
-\email{posquit0.bj@gmail.com}
+\mobile{(+92) 324-4208140}
+\email{ali60351@gmail.com}
 %\dateofbirth{January 1st, 1970}
-\homepage{www.posquit0.com}
-\github{posquit0}
-\linkedin{posquit0}
+% \homepage{www.posquit0.com}
+\github{ali60351}
+\linkedin{alinauman1}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -76,7 +78,7 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra information}
 
-\quote{``Be the change that you want to see in the world."}
+\quote{``Motivation is the fuel for success"}
 
 
 %-------------------------------------------------------------------------------
@@ -84,29 +86,41 @@
 
 % Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[C]
+\makecvheader[L]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {\today}
-  {Byungjin Park~~~·~~~Résumé}
-  {\thepage}
+  {}
+  {Ali Nauman~~~·~~~Résumé}
+  {}
 
 
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
+
+\input{cv/skills.tex}
 \input{resume/summary.tex}
 \input{resume/experience.tex}
-\input{resume/honors.tex}
+% \input{resume/honors.tex}
 \input{resume/presentation.tex}
-\input{resume/writing.tex}
-\input{resume/committees.tex}
+% \input{resume/writing.tex}
+% \input{resume/committees.tex}
 \input{resume/education.tex}
+\newpage
 \input{resume/extracurricular.tex}
 
+\begin{figure}[h!]
+  \includegraphics[
+  width=3cm,
+  height=3cm,
+  keepaspectratio
+  ]{sign.png}
+\end{figure}
+
+\paragraphstyle{\today}
 
 %-------------------------------------------------------------------------------
 \end{document}
